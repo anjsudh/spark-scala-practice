@@ -1,0 +1,14 @@
+## File-based project format:
+*.iws
+
+/out/
+/target/
+/project/
+
+.idea_modules/
+.idea
+
+*.iml
+*.ipr
+*.class
+*.log
