@@ -1,10 +1,10 @@
 import org.apache.log4j._
 import org.apache.spark._
 
-object FriendsAverage {
+object Friends {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
-    val sc = new SparkContext("local[*]", "RatingsCounter")
+    val sc = new SparkContext("local[*]", "Friends")
     val lines = sc.textFile("src/resources/fakeFriends.csv")
     val data = lines.map(x => {
       val arr = x.toString().split(",")
